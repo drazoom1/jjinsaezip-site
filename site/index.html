@@ -169,12 +169,13 @@ footer{padding:44px 0 120px;color:var(--mute);font-size:13px;border-top:1px soli
 footer .wrap{display:block}
 footer .top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;padding-bottom:22px;border-bottom:1px solid var(--line)}
 footer img{height:26px;width:auto;opacity:.8}
-footer .biz{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 40px;padding-top:22px;font-size:12.5px;line-height:1.7}
+footer .biz{display:grid;grid-template-columns:1fr 1fr;gap:8px 40px;max-width:900px;padding-top:22px;font-size:12.5px;line-height:1.7}
 footer .biz h4{grid-column:1/-1;margin:0 0 4px;font-size:13px;color:var(--ink);font-weight:700}
 footer .biz dl{margin:0;display:grid;grid-template-columns:96px 1fr;gap:2px 10px}
 footer .biz dt{color:var(--mute);opacity:.8}
 footer .biz dd{margin:0;color:var(--ink)}
 footer .copy{grid-column:1/-1;margin-top:14px;font-size:12px;opacity:.8}
+@media(max-width:640px){footer .biz{grid-template-columns:1fr}}
 
 /* floating + dock */
 .fab{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--kakao);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(0,0,0,.22)}
