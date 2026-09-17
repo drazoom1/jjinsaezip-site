@@ -1,0 +1,10 @@
+{
+  "name": "jjinsaezip-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "찐새집 — 쓰레기집 특수청소 홈페이지 (static site served by Express)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.19.2" }
+}
