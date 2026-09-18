@@ -208,10 +208,11 @@ footer .copy{grid-column:1/-1;margin-top:14px;font-size:12px;opacity:.8}
 }
 
 /* ── 견적 위저드(대화형) ── */
-#qz{position:fixed;inset:0;background:rgba(15,31,77,.55);z-index:1000;display:none;align-items:flex-end;justify-content:center}
+#qz{position:fixed;inset:0;background:rgba(15,31,77,.5);z-index:1000;display:none;align-items:flex-end;justify-content:center}
 #qz.on{display:flex}
-.qz-box{width:min(520px,100%);height:min(720px,100%);background:#F3F5F9;border-radius:24px 24px 0 0;display:flex;flex-direction:column;overflow:hidden}
-@media(min-width:640px){#qz{align-items:center}.qz-box{border-radius:24px}}
+.qz-box{width:100%;height:88dvh;max-height:88vh;background:#F3F5F9;border-radius:22px 22px 0 0;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 -8px 40px rgba(15,31,77,.25)}
+.qz-in{padding-bottom:calc(16px + env(safe-area-inset-bottom))}
+@media(min-width:640px){#qz{align-items:center;padding:24px}.qz-box{width:420px;height:min(620px,calc(100vh - 48px));max-height:none;border-radius:22px;box-shadow:0 24px 60px rgba(15,31,77,.35)}}
 .qz-hd{background:var(--ink);color:#fff;padding:14px 18px;display:flex;align-items:center;gap:12px}
 .qz-hd .av{width:38px;height:38px;border-radius:19px;background:var(--mint);color:var(--ink);font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;flex:none}
 .qz-hd .av img{height:22px;width:auto}.qz-hd b{font-size:15px}.qz-hd small{display:block;opacity:.8;font-size:12px}
